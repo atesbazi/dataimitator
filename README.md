@@ -12,7 +12,7 @@ DataImitator is a Clojure library designed to generate random words, phrases and
 
 Add the following dependency to your `project.clj` file:
 ```clojure
-[dataimitator "0.0.1"]
+[dataimitator "0.0.2"]
 ```
 
 ## Usage
