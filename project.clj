@@ -1,5 +1,5 @@
 (defproject dataimitator "0.0.0"
-  :description "FIXME: write description"
+  :description "Data imitator for generation random data."
   :url "https://github.com/atesbazi/dataimitator"
   :license {:name "Eclipse Public License"
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
