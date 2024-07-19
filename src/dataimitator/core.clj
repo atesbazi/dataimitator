@@ -1,6 +1,8 @@
-(ns dataimitator.core)
+(ns dataimitator.core
+  (:gen-class))
 
+(defn hello []
+  (println "Hello world!"))
 
-(defn foo "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn -main []
+  (hello))

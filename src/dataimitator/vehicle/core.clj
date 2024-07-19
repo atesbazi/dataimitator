@@ -1,5 +1,4 @@
-(ns dataimitator.vehicle.core
-  (:require [clojure.string :as str]))
+(ns dataimitator.vehicle.core)
 
 (def vehicle-types ["Sedan" "SUV" "Truck" "Coupe" "Convertible" "Van" "Hatchback" "Wagon" "Sports Car"])
 (def vehicle-models ["Model S" "Model X" "Model 3" "Model Y" "Mustang" "Civic" "Accord" "Corolla" "Camry" "F-150"])

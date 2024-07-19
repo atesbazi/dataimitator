@@ -1,15 +1,20 @@
-(defproject org.clojars.atesbazi/dataimitator "0.0.2"
+(defproject org.clojars.atesbazi/dataimitator "0.0.3"
   :description "Data imitator for generation random data."
   :url "https://github.com/atesbazi/dataimitator"
   :license {:name "Eclipse Public License"
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies []
+  :dependencies [[org.clojure/clojure "1.12.0-beta1"]]
   :plugins [[lein-cloverage "1.0.13"]
             [lein-shell "0.5.0"]
             [lein-ancient "0.6.15"]
             [lein-changelog "0.3.2"]]
-  :profiles {:dev {:dependencies [[org.clojure/clojure "1.12.0-beta1"]]}
-             :uberjar {:aot :all :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}}
+  :profiles {:dev {:dependencies []}
+             :uberjar {:aot :all}}
+
+  :global-vars {*warn-on-reflection* false}
+
+  :main dataimitator.core
+
   :deploy-repositories [["releases" :clojars]]
   :aliases {"update-readme-version" ["shell" "sed" "-i" "s/\\\\[dataimitator \"[0-9.]*\"\\\\]/[dataimitator \"${:version}\"]/" "README.md"]}
   :release-tasks [["shell" "git" "diff" "--exit-code"]

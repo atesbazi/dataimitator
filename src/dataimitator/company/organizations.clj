@@ -58,7 +58,7 @@
 
 (defn random-organization-name
   "Generates a random organization name in the specified language.
-    Supported languages: :ar, :de, :en, :es, :fr, :tr
+   Supported languages: :ar, :de, :en, :es, :fr, :tr
    Defaults to :en if no language is specified."
   ([] (random-organization-name :en))
   ([language]

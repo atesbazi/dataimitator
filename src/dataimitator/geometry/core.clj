@@ -45,7 +45,3 @@
       "square" (calculate-square (random-in-range 1 10))
       "cube" (calculate-cube (random-in-range 1 10))
       "triangle" (calculate-triangle (random-in-range 1 10) (random-in-range 1 10)))))
-
-;; Example usage:
-(random-shape)
-
